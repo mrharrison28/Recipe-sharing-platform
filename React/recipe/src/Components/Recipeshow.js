@@ -12,7 +12,7 @@ export default function Recipeshow() {
         
         },[pid])
   return (
-    <div className='2xl:container bg-[#22223b] h-[200vh]'>
+    <div className='2xl:container bg-[#22223b] h-[250vh]'>
         
         <div className='w-[90%] mx-auto bg-[#22223b] text-white font-[poppins]' > 
         <h1 className='text-[30px] text-center p-4'>Explore your Recipe</h1>

@@ -19,6 +19,7 @@ export default function Login() {
     axios.post('http://localhost:2803/users/login', log)
       .then(res => {
         alert(res.data.message);
+          navigate('/')
       })
       .catch(err => {
         console.log(err);
