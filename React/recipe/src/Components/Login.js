@@ -16,7 +16,7 @@ export default function Login() {
 
   const handle = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:2803/users/login', log)
+    axios.post('https://recipe-sharing-platform-back.onrender.com', log)
       .then(res => {
         alert(res.data.message);
           navigate('/')
