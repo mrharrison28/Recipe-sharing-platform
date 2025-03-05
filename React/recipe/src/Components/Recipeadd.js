@@ -35,7 +35,6 @@ export default function Recipeadd() {
         <div className='main1'>
         <div className='main'>
             <div className='form form1'>
-            {/* <h1 className='text-[30px] relative bottom-6'>Enter your Recipe</h1> */}
         <label>Enter Recipe name:</label><br></br>
         <input name='name' value={formData.name} onChange={handleChange} required/><br></br>
         <label>Image URL: </label><br></br>
