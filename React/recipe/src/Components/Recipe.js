@@ -12,6 +12,7 @@ export default function Recipe() {
         },[])
     const navigate=useNavigate()
   return (
+    <>
     <div class="recipe-containers ">
         {list.map(x=>(
         <div class="recipe-card">
@@ -52,7 +53,9 @@ export default function Recipe() {
             <div class="curve_one"></div>
             <div class="curve_two"></div>
         </div>
+        
         </div>
+        </>
     
   )
 }
