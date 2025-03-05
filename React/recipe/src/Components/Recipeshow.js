@@ -6,7 +6,7 @@ export default function Recipeshow() {
         const[list,setList]=useState({})
         const {pid}=useParams()
         useEffect(()=>{
-            axios.get(`http://localhost:2803/recipe/recipe/${pid}`)
+            axios.get(`https://recipe-sharing-platform-back.onrender.com/${pid}`)
             .then(res=>setList(res.data.message))
             .catch(err=>console.log(err))
         
