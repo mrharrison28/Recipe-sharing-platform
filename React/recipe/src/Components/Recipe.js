@@ -6,7 +6,7 @@ import { Link, useNavigate} from 'react-router-dom'
 export default function Recipe() {
     const[list,setList]=useState([])
         useEffect(()=>{
-            axios.get('https://recipe-sharing-platform-back.onrender.com')
+            axios.get('http://localhost:2803/recipe/recipe')
             .then(res=>setList(res.data.message))
             .catch(err=>console.log(err))
         },[])
