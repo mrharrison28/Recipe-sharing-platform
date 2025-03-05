@@ -16,7 +16,7 @@ export default function Recipeadd() {
     }
     const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:2803/recipe/recipe',formData)
+        axios.post('https://recipe-sharing-platform-back.onrender.com',formData)
         
         .then(res=>{
             alert('Signup Successfull Redirecting to Recipe Page...')
