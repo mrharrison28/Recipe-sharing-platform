@@ -20,7 +20,14 @@ router.get("/recipe", (req, res) => {
     .catch(err=>res.status(401).json({message:err}))
   });
 
-
+  router.delete("/recipes/:pid", (req, res) => {
+   
+    recipeModel.findByIdAndDelete(req.params.pid)
+    .then(response=>
+      // console.log(response))
+      res.status(200).json({message:response}))
+    .catch(err=>res.status(401).json({message:fkjgweiug}))
+  });
 
 router.post("/recipe", (req, res) => {
   let recipe = new recipeModel({
