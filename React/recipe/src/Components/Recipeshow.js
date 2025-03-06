@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-
+import DeleteBtn from './DeleteBtn'
 export default function Recipeshow() {
         const[list,setList]=useState({})
         const {pid}=useParams()
@@ -13,7 +13,9 @@ export default function Recipeshow() {
         },[pid])
   return (
     <div className='2xl:container bg-[#22223b] h-[250vh]'>
-        
+        <div className='flex justify-end box-border p-4'>
+        <DeleteBtn/>
+        </div>
         <div className='w-[90%] mx-auto bg-[#22223b] text-white font-[poppins]' > 
         <h1 className='text-[30px] text-center p-4'>Explore your Recipe</h1>
         <div className='flex flex-col justify-center items-center '>
