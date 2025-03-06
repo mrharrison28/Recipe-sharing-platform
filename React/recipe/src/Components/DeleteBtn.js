@@ -18,10 +18,11 @@ export default function DeleteBtn() {
         axios.delete(`http://localhost:2803/recipe/recipes/${pid}`)
         
         .then(res=>{
-            alert('Recipe Deleted Successfully...')
+            
             setTimeout(() => {
+                alert('Recipe Deleted Successfully...')
                 navigate('/recipe')
-             });
+             },3200);
         })
         .catch(err=>{
             setMessage('')
