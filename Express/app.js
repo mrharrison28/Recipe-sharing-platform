@@ -23,7 +23,7 @@ app.use(cors())
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/recipe', recipeRouter);
-mongoose.connect('mongodb://localhost:27017/Recipe')
+mongoose.connect('mongodb+srv://mrharrison2809:harris2809@cluster0.uraaaxq.mongodb.net/')
 .then(()=>{console.log("Database connected Successfully")})
 .catch(err=>console.log(err))
 // catch 404 and forward to error handler
